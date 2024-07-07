@@ -95,7 +95,7 @@
 				<key>script</key>
 				<string>PROFILE="~/Library/Application Support/Google/Chrome/Default"
 PATH="env/bin:$PATH"
-python chrome.py "${PROFILE}" "{query}"</string>
+python3 chrome.py "${PROFILE}" "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -147,7 +147,7 @@ The Alfred script filter is set up to use the default Chrome profile located in 
 
 PROFILE="~/Library/Application Support/Google/Chrome/Profile 1"
 PATH="env/bin:$PATH"
-python chrome.py "${PROFILE}" "{query}"
+python3 chrome.py "${PROFILE}" "{query}"
 In a terminal, the following command can help you find the exact location of the profile directory that the workflow needs:
 
 ls ~/Library/Application\ Support/Google/Chrome/ | grep Profile</string>

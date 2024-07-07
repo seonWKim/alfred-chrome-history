@@ -21,11 +21,11 @@ venv/bin/activate : requirements.txt
 
 install : venv
 	. ${VENV}/bin/activate
-	pip install -r requirements.txt --upgrade --force-reinstall
+	pip3 install -r requirements.txt --upgrade --force-reinstall
 
 lib :
-	cp `python sitepackages.py`/alfred.py alfred.py
-	cp `python sitepackages.py`/docopt.py docopt.py
+	cp `python3 sitepackages.py`/alfred.py alfred.py
+	cp `python3 sitepackages.py`/docopt.py docopt.py
 
 dev : install \
 	lib
