@@ -7,7 +7,6 @@ distclean :
 	rm -f ./alfred-chrome-history.alfredworkflow
 
 clean :
-	rm -f alfred.py
 	rm -f docopt.py
 	rm -rf ${VENV}
 	find . -iname "*.pyc" -delete
@@ -24,7 +23,6 @@ install : venv
 	pip3 install -r requirements.txt --upgrade --force-reinstall
 
 lib :
-	cp `python3 sitepackages.py`/alfred.py alfred.py
 	cp `python3 sitepackages.py`/docopt.py docopt.py
 
 dev : install \
